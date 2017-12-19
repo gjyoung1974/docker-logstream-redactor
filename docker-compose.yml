@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+   fluentd:
+     image: gjyoung1974/fluentd:latest
+     ports:
+       - "5140:5140"
+       - "24224:24224"
+     restart: always
